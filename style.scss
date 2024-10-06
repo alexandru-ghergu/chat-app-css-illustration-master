@@ -1,0 +1,74 @@
+@use "abstracts" as abs;
+@use "components" as cmp;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, 
+html {
+    @include abs.display-flex-start-column();
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-color: abs.$light-white;
+
+    @include abs.for-size(desktop-only) {
+        @include abs.display-flex-align-start-row();
+        overflow: hidden;
+    }
+}
+
+.bk-color-container-1 {
+    z-index: 10;
+    width: 31.88rem;
+    height: 63.63rem;
+    overflow: hidden;
+    position: absolute;
+    top: abs.$spacing-5009;
+    left: abs.$spacing-3022;
+    border-radius: 15.94rem ;
+    background: linear-gradient(to bottom left, abs.$light-magenta, abs.$light-violet);
+
+    @include abs.for-size(desktop-only) {
+        top: abs.$spacing-3180;
+        left: abs.$spacing-900;
+    }
+}
+
+.bk-color-container-2 {
+    z-index: 10;
+    width: 31.88rem;
+    height: 31.25rem;
+    overflow: hidden;
+    position: absolute;
+    top: abs.$spacing-4027;
+    border-radius: 15.94rem 15.94rem 0 0;
+    right: abs.$spacing-3022;
+    background: linear-gradient(to bottom left, abs.$light-magenta-alpha, abs.$light-violet-alpha);
+    
+    @include abs.for-size(desktop-only) {
+        height: 63.63rem;
+        top: abs.$spacing-1190;
+        right: abs.$spacing-1850;
+    }
+}
+
+.product-presentation-container {
+    @include abs.display-flex-start-column();
+    padding: abs.$spacing-610 abs.$spacing-320 abs.$spacing-640 abs.$spacing-320;
+    text-align: center;
+
+    @include abs.for-size(desktop-only) {
+        @include abs.display-flex-align-start-column;
+        z-index: 11;
+        width: 27.82rem;
+        height: 11.44rem;
+        padding: initial;
+        text-align: start;
+        margin: abs.$spacing-3009 0 0 abs.$spacing-1250;
+    }
+}

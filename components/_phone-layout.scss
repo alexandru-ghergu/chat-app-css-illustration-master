@@ -1,0 +1,183 @@
+@use "abstracts" as abs;
+
+.phone-container {
+    @include abs.display-flex-start-column();
+    z-index: 11;
+    width: 15.44rem;
+    height: 31.75rem;
+    position: relative;
+    border-radius: 1.88rem;
+    background: abs.$white;
+    margin: abs.$spacing-670 0 0 abs.$spacing-100;
+    box-shadow: 0 30px 60px -10px abs.$very-dark-desaturated-violet-alpha;
+    padding: abs.$spacing-80 abs.$spacing-145 abs.$spacing-140 abs.$spacing-45;
+
+    @include abs.for-size(desktop-only) {
+        margin: abs.$spacing-1480 0 0 abs.$spacing-1005;
+    }
+}
+
+.phone-camera-container {
+    z-index: 13;
+    width: 8.07rem;
+    height: 1.82rem;
+    position: absolute;
+    top: abs.$spacing-640;
+    background: abs.$white;
+    border-radius: 0 0 abs.$spacing-140 abs.$spacing-140;
+
+    @include abs.for-size(desktop-only) {
+        top: abs.$spacing-1480;
+        margin-right: abs.$spacing-4650;
+    }
+}
+
+.phone-container .wrapper-container {
+    border-radius: 1.25rem;
+    background: abs.$light-grayish-violet;
+}
+
+.phone-container header {
+    @include abs.display-flex-center();
+    width: 14.25rem;
+    z-index: 12;
+    border-radius: 1.25rem 1.25rem 0.38rem 0.38rem;
+    padding: abs.$spacing-300 abs.$spacing-170 abs.$spacing-120 abs.$spacing-150; 
+    background: linear-gradient(to bottom left, abs.$light-magenta, abs.$light-violet);
+}
+
+.phone-container header .user-details-container {
+    @include abs.display-flex-center();
+}
+
+.phone-container header img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid abs.$white;
+    margin-left: abs.$spacing-80;
+}
+
+.phone-container header .user-details-container-text {
+    @include abs.display-flex-align-start-column();
+    width: 4.63rem;
+    height: 1.5rem;
+    margin-left: abs.$spacing-80;
+}
+
+.phone-container header .fa-ellipsis-vertical {
+    @include abs.display-flex-center();
+    width: 0.13rem;
+    height: 0.5rem;
+    color: abs.$white;
+    margin-left: abs.$spacing-760;
+}
+
+.phone-container main {
+    padding: abs.$spacing-100 abs.$spacing-70;
+}
+
+.phone-container main .sender-message-container {
+    width: 8rem;
+    background: abs.$soft-violet;
+    padding: abs.$spacing-60 abs.$spacing-80;
+    border-radius: 0.63rem 0.63rem 0.63rem 0.25rem;
+}
+
+.phone-container main .sender-message-container:nth-child(2) {
+    margin-top: abs.$spacing-80;
+}
+
+.phone-container main .sender-message-container:nth-child(4) {
+    margin-top: abs.$spacing-160;
+}
+
+.phone-container main .receiver-container {
+    @include abs.display-flex-end-column();
+}
+
+.phone-container main .receiver-message-container {
+    width: 8rem;
+    background: abs.$white;
+    margin-top: abs.$spacing-80;
+    padding: abs.$spacing-60 abs.$spacing-80;
+    border-radius: 0.63rem 0.63rem 0.25rem 0.63rem;
+    box-shadow: 0 10px 5px -5px abs.$dark-violet-alpha;
+}
+
+.phone-container main .receiver-message-container:nth-child(3) {
+    width: 5rem;
+}
+
+.phone-container main .receiver-pictures-container {
+    width: 8.5rem;
+    height: 2.5rem;
+    margin-top: abs.$spacing-160;
+}
+
+.phone-container main .receiver-pictures-container img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.63rem;
+}
+
+.phone-container main .receiver-pictures-container img:nth-child(2) {
+    margin: 0 abs.$spacing-40;
+}
+
+.phone-container main .offer-container {
+    @include abs.display-flex-center();
+    justify-content: flex-start;
+    width: 10rem;
+    margin-top: abs.$spacing-80;
+    border-radius: 0.63rem 0.63rem 0.63rem 0.25rem;
+    padding: abs.$spacing-100 abs.$spacing-160 abs.$spacing-100 abs.$spacing-80;
+    background: linear-gradient(to bottom right, abs.$light-magenta, abs.$light-violet);
+}
+
+.phone-container main .offer-container #oval {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid abs.$very-light-magenta;
+}
+
+.phone-container main .offer-container #spacing-350 {
+    margin-left: abs.$spacing-350;
+}
+
+.phone-container main .offer-container #spacing-500 {
+    margin-left: abs.$spacing-500;
+}
+
+.phone-container main .text-input-container {
+    @include abs.display-flex-center();
+    justify-content: space-between;
+    background: abs.$white;
+    border-radius: 1.06rem;
+    margin-top: abs.$spacing-160;
+    padding: abs.$spacing-48 abs.$spacing-47 abs.$spacing-48 abs.$spacing-194;
+}
+
+.phone-container main .text-input-container .submit-button {
+    @include abs.display-flex-center();
+    width: 1.52rem;
+    height: 1.52rem;
+    cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+}
+
+.phone-container main .text-input-container .submit-button #oval {
+    width: 1.52rem;
+    height: 1.52rem;
+    border-radius: 50%;
+    background-color: abs.$very-dark-desaturated-violet;
+}
+
+.phone-container main .text-input-container .submit-button .fa-angle-right {
+    font-size: 0.88rem;
+    color: abs.$white;
+    position: absolute;
+}

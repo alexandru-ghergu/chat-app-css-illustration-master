@@ -1,0 +1,70 @@
+@use "variables" as vrb;
+
+* {
+    font-family: 'Rubik';
+}
+
+.phone-container header #back-arrow {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: vrb.$white;
+}
+
+.phone-container header .user-details-container-text {
+    line-height: 0.82rem;
+}
+
+.phone-container header .user-details-container h2 {
+    font-weight: 500;
+    color: vrb.$white;
+    font-size: 0.69rem;
+}
+
+.phone-container header .user-details-container p {
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: vrb.$pale-violet;
+}
+
+.phone-container main .sender-message-container {
+    font-size: 0.5rem;
+    line-height: 0.69rem;
+    color: vrb.$moderate-violet;
+}
+
+.phone-container main .receiver-message-container {
+    font-size: 0.5rem;
+    line-height: 0.69rem;
+    color: vrb.$desaturated-dark-violet;
+}
+
+.phone-container main .offer-container {
+    color: vrb.$white;;
+}
+
+.phone-container main .offer-container h2 {
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+.phone-container main .offer-container p {
+    margin-left: 8px;
+    font-size: 0.5rem;
+}
+
+.phone-container main .text-input-container {
+    font-size: 0.57rem;
+    color: vrb.$grayish-blue;
+}
+
+.product-presentation-container h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: vrb.$very-dark-desaturated-violet;
+}
+
+.product-presentation-container p {
+    line-height: 1.75rem;
+    margin-top: vrb.$spacing-240;
+    color: vrb.$dark-grayish-violet;
+}

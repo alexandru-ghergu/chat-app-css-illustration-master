@@ -1,0 +1,70 @@
+// #################################### Text ####################################
+
+$pale-violet: hsl(276, 100%, 81%); //(sub-heading at the top of the app UI).
+$grayish-blue: hsl(206, 6%, 79%); // (placeholder text).
+$moderate-violet: hsl(276, 55%, 52%); // (chat on the left).
+$dark-grayish-violet: hsl(270, 7%, 64%); // (paragraph).
+$desaturated-dark-violet: hsl(271, 15%, 43%); // (chat on the right).
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); // (main heading). 
+
+// #################################### Gradients ####################################
+
+$light-violet: hsl(264, 100%, 61%);
+$light-violet-alpha: hsl(264, 100%, 61%, 0.03);
+
+$light-magenta: hsl(293, 100%, 63%);
+$light-magenta-alpha: hsl(293, 100%, 63%, 0.03);
+
+// #################################### Secondary ####################################
+
+$white: hsl(0, 0%, 100%);
+$light-white: hsl(0, 0%, 98.04%); // (body background).
+$soft-violet: hsl(276, 40.54%, 92.75%); // (container chat on the left).
+$dark-violet-alpha: hsla(271.03, 56.86%, 20%, 0.0453); // (receiver shadow).
+$light-grayish-violet: hsl(270, 20%, 96%); // (app background).
+$very-light-magenta: hsl(289, 100%, 72%); // (radio button outline).
+$very-dark-desaturated-violet: hsl(271, 36%, 24%); // (submit button background).
+$very-dark-desaturated-violet-alpha: hsl(271, 36%, 24%, 0.2512); // (phone shadow).
+
+// #################################### Spacing ####################################
+
+$spacing-40: 0.25rem;
+$spacing-45: 0.28rem;
+$spacing-47: 0.30rem;
+$spacing-48: 0.31rem;
+$spacing-60: 0.38rem;
+$spacing-70: 0.44rem;
+$spacing-80: 0.5rem;
+$spacing-100: 0.63rem;
+$spacing-110: 0.69rem;
+$spacing-120: 0.75rem;
+$spacing-140: 0.88rem;
+$spacing-145: 0.91rem;
+$spacing-150: 0.94rem;
+$spacing-155: 0.97rem;
+$spacing-160: 1rem;
+$spacing-165: 1.04rem;
+$spacing-170: 1.07rem;
+$spacing-194: 1.22rem;
+$spacing-240: 1.5rem;
+$spacing-300: 1.88rem;
+$spacing-320: 2rem;
+$spacing-350: 2.19rem;
+$spacing-500: 3.13rem;
+$spacing-610: 3.82rem;
+$spacing-640: 4rem;
+$spacing-670: 4.19rem;
+$spacing-760: 4.75rem;
+$spacing-800: 5rem;
+$spacing-900: -5.63rem;
+$spacing-1005: 6.57rem;
+$spacing-1190: 7.44rem;
+$spacing-1250: 7.82rem;
+$spacing-1480: 9.25rem;
+$spacing-1850: -11.57rem;
+$spacing-3009: 19.32rem;
+$spacing-3180: -19.88rem;
+$spacing-3022: -20.13rem;
+$spacing-4027: 26.69rem;
+$spacing-4650: 29.07rem;
+$spacing-5009: -31.82rem;

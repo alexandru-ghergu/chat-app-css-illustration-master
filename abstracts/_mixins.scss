@@ -1,0 +1,41 @@
+// #################################### Display Flex ####################################
+
+@mixin display-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin display-flex-center-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin display-flex-start-column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+@mixin display-flex-align-start-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin display-flex-align-start-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin display-flex-end-column {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
